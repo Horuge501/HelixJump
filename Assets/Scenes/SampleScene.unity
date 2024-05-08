@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -198,13 +198,17 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9973f03374cd1c4d9c3d3a3763ffe8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
       propertyPath: m_Name
       value: Cheese_FBX (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
       propertyPath: m_TagString
-      value: Platform
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
@@ -292,12 +296,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese_FBX (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!4 &109530146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 109530145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &143617052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 1755038090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &189656447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 460173128}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &209371838 stripped
 GameObject:
@@ -418,12 +436,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese_FBX (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!4 &460173129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 460173128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &460173132
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189656447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+--- !u!1 &559157747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 657922507}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &657922507
 PrefabInstance:
@@ -500,9 +541,17 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9973f03374cd1c4d9c3d3a3763ffe8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
       propertyPath: m_Name
       value: Cheese_FBX (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
@@ -511,6 +560,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 657922507}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &657922511
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559157747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +668,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &728998090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 1540508422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &774359917
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese_FBX
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!4 &949058931 stripped
@@ -862,6 +934,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -935,6 +1008,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 26.4, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc0d3392a2129348acbe4684ba31869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1138494868}
+  offset: {x: 0, y: 1.5, z: -5}
+  posOfset: 5
+  smoothDamp: 0.5
 --- !u!1 &1117989054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
@@ -955,7 +1044,7 @@ GameObject:
   - component: {fileID: 1138494864}
   - component: {fileID: 1138494869}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1251,6 +1340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese_FBX (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!4 &1235927650 stripped
@@ -1258,6 +1351,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 1235927649}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1269572589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 109530145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1269572592
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269572589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!1001 &1295513957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1362,6 +1474,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+--- !u!1 &1330682055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 1235927649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1330682058
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330682055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!1001 &1540508422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,12 +1572,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese_FBX
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!4 &1540508423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 1540508422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1540508426
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728998090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+--- !u!1 &1602980187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 1770213575}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1655983190
 GameObject:
@@ -1642,6 +1796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese_FBX (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!4 &1755038091 stripped
@@ -1649,6 +1807,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 1755038090}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1755038094
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143617052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!1 &1761763538 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
@@ -1743,9 +1915,17 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9973f03374cd1c4d9c3d3a3763ffe8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
       propertyPath: m_Name
       value: Cheese_FBX (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
@@ -1754,6 +1934,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
   m_PrefabInstance: {fileID: 1770213575}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1770213579
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602980187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+--- !u!1 &1787374277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
+  m_PrefabInstance: {fileID: 949058930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1787374280
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787374277}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7612828271358214642, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
 --- !u!1 &1998441256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 75d99e8d76ed1624f9697f3af92c89b6, type: 3}
