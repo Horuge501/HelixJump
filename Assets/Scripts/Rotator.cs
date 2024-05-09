@@ -6,15 +6,19 @@ public class Rotator : MonoBehaviour
 {
     public float rotateSpeed;
 
-    private void FixedUpdate()
+    private CylinderController controls;
+    private float rotateInput;
+
+    private void Awake()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0, -rotateSpeed * Time.deltaTime, 0);
-        }
+        controls = new CylinderController();
+        controls.Enable();
+        controls.PlayerControls.Rotate.performed += ctx => rotateInput = ctx.ReadValue<float>();
+        controls.PlayerControls.Rotate.canceled += ctx => rotateInput = 0f;
+    }
+
+    private void Update()
+    {
+        transform.Rotate(0, rotateInput * rotateSpeed * Time.deltaTime, 0);
     }
 }
